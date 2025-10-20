@@ -5,6 +5,25 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [1.2.5] - 2025-10-20
+
+### Added
+
+- **Calculator UI Enhancements**:
+  - Separated arithmetic operations into dedicated "Operations" tab in calculator popup
+  - Removed non-arithmetic operators (comparison, bitwise) from Operations tab
+  - Cleaner organization with Numbers, Operations, Functions, and Other tabs
+  - Updated history display format to single-line format: "> expression = result"
+
+### Changed
+
+- Improved calculator popup layout with focused arithmetic operations
+- Enhanced history display for better readability
+
+### Fixed
+
+- Calculator popup now shows only relevant arithmetic operations in Operations tab
+
 ## [1.2.0] - 2025-10-20
 
 ### Added
