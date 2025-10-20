@@ -5,12 +5,15 @@ A modern, feature-rich programmable calculator built with Python, Tkinter, and S
 ## Features
 
 - **Expression Evaluation**: Evaluate mathematical expressions with support for variables, functions, and constants
-- **Variable Support**: Define and reuse variables in calculations
-- **Built-in Functions**: Trigonometric, logarithmic, exponential, and more
-- **Modern GUI**: Clean, responsive interface with dark/light theme options
-- **Calculation History**: Track your calculation history
-- **Keyboard Shortcuts**: Quick access with Enter key and other shortcuts
-- **Popup Calculator**: Additional button interface for easy input
+- **Variable Support**: Define and reuse variables in calculations with persistent display
+- **Advanced Functions**: Trigonometric, logarithmic, exponential, calculus (diff, integrate), algebraic (solve), and special functions (gamma, factorial)
+- **Complex Numbers**: Support for complex number operations (1+2j, I for imaginary unit)
+- **Modern GUI**: Clean, responsive interface with dark/light theme toggle and syntax highlighting
+- **Calculation History**: Track your calculation history with smart logging
+- **Keyboard Shortcuts**: Quick access with Enter, Ctrl+Z (undo), Ctrl+S (save history), and other shortcuts
+- **Popup Calculator**: Enhanced button interface with function matrix layout
+- **User Preferences**: Persistent settings stored in JSON format for themes and future customizations
+- **Modular Architecture**: Well-organized codebase with separate modules for better maintainability
 
 ## Supported Operations
 
@@ -57,6 +60,11 @@ A modern, feature-rich programmable calculator built with Python, Tkinter, and S
 - `sin(pi/2)` → 1
 - `x = 10; x ** 2` → 100
 - `sqrt(16) + log(100)` → 6
+- `solve(x**2 - 4, x)` → [-2, 2]
+- `diff(x**2, x)` → 2*x
+- `integrate(x**2, x)` → x**3/3
+- `gamma(5)` → 24
+- `(1+2j) * (3-4j)` → (11+2j)
 
 ## Screenshots
 

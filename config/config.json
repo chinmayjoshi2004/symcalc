@@ -1,0 +1,48 @@
+{
+  "app": {
+    "name": "SymCalc",
+    "version": "1.1.0",
+    "author": "chinmayjoshi2004",
+    "description": "Professional Symbolic Calculator"
+  },
+  "ui": {
+    "default_theme": "dark",
+    "window_size": {
+      "width": 1200,
+      "height": 800
+    },
+    "min_size": {
+      "width": 1000,
+      "height": 700
+    },
+    "sidebar_width": 250,
+    "input_height": 3,
+    "results_height": 15
+  },
+  "functions": {
+    "available": [
+      "sin", "cos", "tan", "log", "exp", "sqrt",
+      "diff", "integrate", "solve", "factor", "expand",
+      "simplify", "limit", "series", "gamma", "factorial"
+    ],
+    "grid_layout": {
+      "rows": 3,
+      "cols": 3
+    }
+  },
+  "behavior": {
+    "auto_clear_welcome": true,
+    "smart_history": true,
+    "save_theme_preference": true,
+    "max_history_entries": 100
+  },
+  "shortcuts": {
+    "calculate": "Return",
+    "clear": "Control-l",
+    "history": "Control-h",
+    "help": "F1",
+    "settings": "Control-comma",
+    "newline": "Shift-Return",
+    "calculate_alt": "Control-Return"
+  }
+}

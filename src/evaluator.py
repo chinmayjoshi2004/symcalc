@@ -1,5 +1,5 @@
 import sympy as sp
-from sympy import symbols, sympify, SympifyError, Float
+from sympy import symbols, sympify, SympifyError, Float, solve, diff, integrate, gamma, factorial, I
 
 class CalculatorEvaluator:
     def __init__(self):
@@ -30,7 +30,16 @@ class CalculatorEvaluator:
             # Add float function to locals for explicit float conversion
             locals_dict = self.variables.copy()
             locals_dict['float'] = Float
+            locals_dict['solve'] = solve
+            locals_dict['diff'] = diff
+            locals_dict['integrate'] = integrate
+            locals_dict['gamma'] = gamma
+            locals_dict['factorial'] = factorial
+            locals_dict['I'] = I  # Imaginary unit for complex numbers
             expr = sympify(expression, locals=locals_dict)
+            if isinstance(expr, list):
+                # Handle solve() which returns a list
+                return str(expr)
             result = expr.evalf()  # Evaluate to float for numerical results
             return str(result)
 

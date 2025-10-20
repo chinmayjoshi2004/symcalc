@@ -1,0 +1,7 @@
+{
+  "theme": "dark",
+  "precision": 4,
+  "max_history": 100,
+  "auto_save": true,
+  "window_geometry": "1200x800+100+100"
+}

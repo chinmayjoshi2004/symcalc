@@ -1,0 +1,65 @@
+{
+  "functions": {
+    "sin": {
+      "syntax": "sin(x)",
+      "description": "Sine function",
+      "category": "trigonometric",
+      "example": "sin(pi/2) = 1"
+    },
+    "cos": {
+      "syntax": "cos(x)",
+      "description": "Cosine function",
+      "category": "trigonometric",
+      "example": "cos(0) = 1"
+    },
+    "tan": {
+      "syntax": "tan(x)",
+      "description": "Tangent function",
+      "category": "trigonometric",
+      "example": "tan(pi/4) = 1"
+    },
+    "log": {
+      "syntax": "log(x)",
+      "description": "Natural logarithm",
+      "category": "exponential",
+      "example": "log(e) = 1"
+    },
+    "exp": {
+      "syntax": "exp(x)",
+      "description": "Exponential function (e^x)",
+      "category": "exponential",
+      "example": "exp(1) = e"
+    },
+    "sqrt": {
+      "syntax": "sqrt(x)",
+      "description": "Square root function",
+      "category": "roots",
+      "example": "sqrt(16) = 4"
+    },
+    "diff": {
+      "syntax": "diff(expr, var)",
+      "description": "Derivative of expression with respect to variable",
+      "category": "calculus",
+      "example": "diff(x**2, x) = 2*x"
+    },
+    "integrate": {
+      "syntax": "integrate(expr, var)",
+      "description": "Indefinite integral of expression",
+      "category": "calculus",
+      "example": "integrate(x**2, x) = x**3/3"
+    },
+    "solve": {
+      "syntax": "solve(expr, var)",
+      "description": "Solve equation for variable",
+      "category": "algebra",
+      "example": "solve(x**2 - 4, x) = [-2, 2]"
+    }
+  },
+  "categories": {
+    "trigonometric": ["sin", "cos", "tan"],
+    "exponential": ["log", "exp"],
+    "roots": ["sqrt"],
+    "calculus": ["diff", "integrate"],
+    "algebra": ["solve"]
+  }
+}
