@@ -6,7 +6,7 @@ import os
 def load_user_preferences():
     """Load user preferences from user.json"""
     try:
-        with open('user.json', 'r') as f:
+        with open('config/user.json', 'r') as f:
             return json.load(f)
     except (FileNotFoundError, json.JSONDecodeError):
         return {
@@ -19,7 +19,7 @@ def load_user_preferences():
 
 def save_user_preferences(preferences):
     """Save user preferences to user.json"""
-    with open('user.json', 'w') as f:
+    with open('config/user.json', 'w') as f:
         json.dump(preferences, f, indent=2)
 
 def load_theme_preference():

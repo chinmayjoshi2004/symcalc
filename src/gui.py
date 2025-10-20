@@ -1,10 +1,5 @@
-import tkinter as tk
-from tkinter import ttk, scrolledtext, Toplevel, messagebox
-from evaluator import CalculatorEvaluator
-import threading
-import time
-import json
-import os
+# src/gui.py
+from .evaluator import CalculatorEvaluator
 
 # Import modular components
 import sys
