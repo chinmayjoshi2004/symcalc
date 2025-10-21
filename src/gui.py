@@ -48,9 +48,6 @@ class CalculatorGUI:
         utils.show_welcome_message(self)
 
     # Delegate methods to modular components
-    def show_calculator_popup(self):
-        popups.show_calculator_popup(self)
-
     def show_variables(self):
         popups.show_variables(self)
 
@@ -68,9 +65,6 @@ class CalculatorGUI:
 
     def clear_entry(self):
         utils.clear_entry(self)
-
-    def calculate_from_popup(self):
-        utils.calculate_from_popup(self)
 
     def calculate(self):
         utils.calculate(self)
